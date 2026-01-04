@@ -6,7 +6,7 @@ gpus: none
 
 containers:
   - name: "qwen2-5-05b"
-    image: "ghcr.io/tinfoilsh/confidential-qwen2-5-05b:v0.0.5"
+    image: "ghcr.io/tinfoilsh/qwen2-5-05b:v0.0.5"
     args:
       [
         "-e",
