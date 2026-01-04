@@ -6,13 +6,18 @@ gpus: none
 
 containers:
   - name: "qwen2-5-05b"
-    image: ""
-    args: []
-    env:
-      - "MODEL_NAME=Qwen/Qwen2.5-0.5B-Instruct-GGUF"
-      - "PORT=8000"
-      - "CONTEXT_SIZE=8192"
-      - "CUDA_VISIBLE_DEVICES="
+    image: "ghcr.io/tinfoilsh/qwen2-5-05b-gguf:v0.0.4"
+    args:
+      [
+        "-e",
+        "MODEL_NAME=Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "-e",
+        "PORT=8000",
+        "-e",
+        "CONTEXT_SIZE=8192",
+        "-e",
+        "CUDA_VISIBLE_DEVICES=",
+      ]
 
 shim:
   listen-port: 443
