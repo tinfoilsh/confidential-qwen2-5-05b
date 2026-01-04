@@ -22,5 +22,4 @@ shim:
   paths:
     - /v1/chat/completions
     - /health
-    - /v1/models
     - /metrics
