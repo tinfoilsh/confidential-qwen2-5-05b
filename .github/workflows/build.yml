@@ -48,10 +48,10 @@ jobs:
       id-token: write
       attestations: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
 
       - name: Build and attest with Tinfoil
-        uses: tinfoilsh/pri-build-action@v0.5.5
+        uses: tinfoilsh/pri-build-action@5d450a7f30904866efc401e24484b935b7ed52dd
         with:
           config-file: ${{ github.workspace }}/tinfoil-config.yml
           github-token: ${{ secrets.GITHUB_TOKEN }}
