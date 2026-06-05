@@ -1,5 +1,5 @@
 shim-version: v0.3.16@sha256:20220be4487f241e7e2a9af6dd576d20ba35d71307bd777c8dba9ba5da03fb38
-cvm-version: 0.6.7
+cvm-version: 0.10.4
 cpus: 8
 memory: 16384
 
